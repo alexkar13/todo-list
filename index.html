@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+
+ <div class="wrapper">
+<h1>Todo List</h1>
+
+<div>
+  <button onclick="handlers.toggleAll()" class="btn btn-info">Toggle All</button>
+</div>
+
+<div>
+  <button onclick="handlers.addTodo()" class="btn btn-info">Add</button>
+  <input id="addTodoTextInput" type="text">
+</div>
+
+<div>
+  <button onclick="handlers.changeTodo()" class="btn btn-info">Change Todo</button>
+  <input id="changeTodoPositionInput" type="number">
+  <input id="changeTodoTextInput" type="text">
+</div>
+
+<div>
+  <button onclick="handlers.toggleCompleted()" class=" btn btn-info">Toggle Completed</button>
+  <input id="toggleCompletedPositionInput" type="number">
+</div>
+
+<ul>
+</ul>
+</div>
+
+<script src="index.js"></script>
+
+  </body>
+</html>
